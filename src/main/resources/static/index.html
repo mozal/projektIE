@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body ng-app="ngClassifieds" ng-controller="RegisterController">
+
+<h1>REGISTER</h1>
+<input type="text" placeholder="Enter youre name" ng-model="user.name"> <br>
+<input type="text" placeholder="Enter youre surname" ng-model="user.surname"><br>
+<input type="email" placeholder="Enter youre email" ng-model="user.email"> <br>
+<input type="password" placeholder="Enter youre password" ng-model="user.password"><br>
+<input type="password" placeholder="Repeat password" ng-model="user.repasswd"><br>
+<button ng-click=" registerFunction() ">Register</button>
+
+<h1>{{message.text}}</h1>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/RegisterController.js"></script>
+
+</body>
+</html>
